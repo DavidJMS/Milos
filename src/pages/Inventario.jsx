@@ -3,6 +3,8 @@ import React from "react"
 import SimpleTable from "../component/Table"
 import SimpleSidebar from "../component/SimpleSidebar"
 
+import AgregarMaterial from "../component/AgregarMaterial"
+
 const Proveedores = () => {
   const title = "Materiales"
   const fields = ["Nombre", "Existencia", "Minimo en almacen"]
@@ -16,11 +18,15 @@ const Proveedores = () => {
   ]
   return (
     <SimpleSidebar>
-      <SimpleTable
-        title={title}
-        fields={fields}
-        values={values}
-      />
+      <>
+        <AgregarMaterial/>
+        <SimpleTable
+          title={title}
+          fields={fields}
+          values={values}
+        />
+        
+      </>
     </SimpleSidebar>
   )
 }
