@@ -3,6 +3,7 @@ import React from "react"
 import SimpleTable from "../component/Table"
 import SimpleSidebar from "../component/SimpleSidebar"
 import AgregarProveedor from "../component/AgregarProveedor"
+import { HStack } from "@chakra-ui/react"
 
 const Proveedores = () => {
   const title = "Proveedores"
@@ -15,7 +16,9 @@ const Proveedores = () => {
   return (
     <SimpleSidebar>
       <>
+      <HStack w={'80%'} display={'flex'} justifyContent={'end'} mr={4}>
         <AgregarProveedor />
+      </HStack>
         <SimpleTable
           title={title}
           fields={fields}
