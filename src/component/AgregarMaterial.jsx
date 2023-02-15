@@ -29,7 +29,7 @@ export default function AgregarMaterial() {
 
   return (
     <>
-      <Button onClick={onOpen}>Gestionar Material</Button>
+      <Button w={'15%'} mb={4} backgroundColor={'white'} border={'1px solid #34B3E4'} onClick={onOpen}>Gestionar Material</Button>
       <Modal
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}

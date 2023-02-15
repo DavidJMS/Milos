@@ -4,6 +4,7 @@ import SimpleTable from "../component/Table"
 import SimpleSidebar from "../component/SimpleSidebar"
 
 import AgregarMaterial from "../component/AgregarMaterial"
+import { HStack } from "@chakra-ui/react"
 
 const Inventario = () => {
   const title = "Materiales"
@@ -19,7 +20,9 @@ const Inventario = () => {
   return (
     <SimpleSidebar>
       <>
-        <AgregarMaterial/>
+      <HStack w={'80%'} display={'flex'} justifyContent={'end'} mr={4}>
+      <AgregarMaterial/>
+      </HStack>
         <SimpleTable
           title={title}
           fields={fields}

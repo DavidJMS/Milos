@@ -14,7 +14,7 @@ import {
 
 const SimpleTable = ({title, fields, values}) => (
   <TableContainer>
-  <Table variant='simple'>
+  <Table backgroundColor={'white'} variant='simple'>
     <TableCaption>{title}</TableCaption>
     <Thead>
       <Tr>
