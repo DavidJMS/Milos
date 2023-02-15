@@ -1,5 +1,12 @@
 import React from "react"
 
+import {
+  MdDeleteForever,
+} from 'react-icons/md';
+import {
+  FaEdit,
+} from 'react-icons/fa';
+
 import SimpleTable from "../component/Table"
 import SimpleSidebar from "../component/SimpleSidebar"
 
@@ -9,9 +16,9 @@ const TipoMaterial = () => {
   const title = "Materiales"
   const fields = ["Nombre", "Unidad de medida", "Accion"]
   const values = [
-    ["Harina de trigo", "1 kg"],
-    ["Carton de huevo", "12 unidades"],
-    ["Leche liquida", "1 L"],
+    ["Harina de trigo", "1 kg", <><MdDeleteForever /><FaEdit /></>],
+    ["Carton de huevo", "12 unidades", <><MdDeleteForever /><FaEdit /></>],
+    ["Leche liquida", "1 L", <><MdDeleteForever /><FaEdit /></>],
   ]
   return (
     <SimpleSidebar>
