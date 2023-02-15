@@ -1,11 +1,12 @@
 import React from "react"
+import FormProveedor from "../component/FormProveedor"
 import SimpleSidebar from "../component/SimpleSidebar"
 
 
 const AgregarProveedor = () => {
   return(
   <SimpleSidebar>
-    <h1>Heyyyyyyyyyyy</h1>
+    <FormProveedor />
   </SimpleSidebar>) 
 }
 
