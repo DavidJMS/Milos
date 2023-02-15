@@ -5,7 +5,7 @@ import SimpleSidebar from "../component/SimpleSidebar"
 
 import AgregarMaterial from "../component/AgregarMaterial"
 
-const Proveedores = () => {
+const Inventario = () => {
   const title = "Materiales"
   const fields = ["Nombre", "Existencia", "Minimo en almacen"]
   const values = [
@@ -31,4 +31,4 @@ const Proveedores = () => {
   )
 }
 
-export default Proveedores
+export default Inventario
