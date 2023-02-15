@@ -12,9 +12,23 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
+
+
 import {
   FiMenu,
 } from 'react-icons/fi';
+
+import {
+  BsFillPeopleFill,
+} from 'react-icons/bs';
+
+import {
+  MdOutlineInventory,
+} from 'react-icons/md';
+
+import {
+  FaTruckMoving,
+} from 'react-icons/fa';
 
 export default function SimpleSidebar({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -47,9 +61,9 @@ export default function SimpleSidebar({ children }) {
 
 const SidebarContent = ({ onClose, ...rest }) => {
   const LinkItems = [
-    {name:"Clientes"},
-    {name:"Proveedores"},
-    {name:"Inventario"}
+    {name:"Clientes", icon: BsFillPeopleFill},
+    {name:"Proveedores", icon: FaTruckMoving},
+    {name:"Inventario", icon:MdOutlineInventory }
   ]
   return (
     <Box
