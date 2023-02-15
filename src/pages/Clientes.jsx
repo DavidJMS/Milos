@@ -2,6 +2,7 @@ import React from "react"
 
 import SimpleTable from "../component/Table"
 import SimpleSidebar from "../component/SimpleSidebar"
+import AgregarCliente from "../component/AgregarCliente"
 
 const Clientes = () => {
   const title = "Clientes"
@@ -11,6 +12,7 @@ const Clientes = () => {
   ]
   return (
     <SimpleSidebar>
+      <AgregarCliente />
       <SimpleTable
         title={title}
         fields={fields}
